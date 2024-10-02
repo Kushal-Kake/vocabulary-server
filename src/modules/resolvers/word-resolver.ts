@@ -15,7 +15,7 @@ export class WordResolver {
     }
 
     @NestJSGraphQL.Mutation(() => Entities.WordDefinitions)
-    async createWord(@NestJSGraphQL.Args('data') data: Inputs.TextInput) {
+    async createWord(@NestJSGraphQL.Args('data') data: Inputs.WordInput) {
         return await this.wordService.createWord(data)
     }
 }

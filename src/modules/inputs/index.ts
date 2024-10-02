@@ -1,3 +1,3 @@
-import { TextInput } from "./text-input.js";
+import { WordInput } from "./word-input.js"
 
-export {TextInput}
+export {WordInput}

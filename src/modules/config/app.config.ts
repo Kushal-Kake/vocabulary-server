@@ -7,7 +7,7 @@ const loadDefaultConfiguration = () => ({
   });
 
   const loadOxforApiConfiguration = () => ({
-    oxforcBaseUrl: process.env.OXFORD_BASE_URL ?? 'https://od-api-sandbox.oxforddictionaries.com/api/v2',
+    oxfordBaseUrl: process.env.OXFORD_BASE_URL ?? 'https://od-api-sandbox.oxforddictionaries.com/api/v2',
     appKey: process.env.OXFORD_APP_KEY ?? "",
     appId: process.env.OXFORD_APP_ID ?? ""
   })
