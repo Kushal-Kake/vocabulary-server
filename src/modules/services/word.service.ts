@@ -63,6 +63,8 @@ export class WordService {
 
     async getWordData(word: string) {
         try {
+            //The API is currently functioning for words that start with the letter "a", but due to API restrictions,
+            //it is not working for words starting with other letters. This issue is related to the external API's limitations.
             const baseUrl: string = this.configService.get('oxfordBaseUrl', "")
             const appId: string = this.configService.get("appId", "")
             const appKey: string = this.configService.get('appKey', "")
